@@ -1,0 +1,37 @@
+<!--pages/activity/dayCouples/coupleInfo.wxml-->
+<text id="sorryHintText" wx:if="{{sorryHint}}">{{sorryHint}}</text>
+<text id="okHintText" wx:if="{{okHint}}">{{okHint}}</text>
+<view wx:for="{{coupleInfoArr}}" class="coupleInfoItem">
+  <i-row>
+    <i-col span="9" offset="1">
+      <text class="infoTitle">微信号：</text>
+    </i-col>
+    <i-col span="13">
+      <text class="infoContent">{{item.phone_num}}</text>
+    </i-col>
+  </i-row>
+  <i-row>
+    <i-col span="9" offset="1">
+      <text class="infoTitle">性别：</text>
+    </i-col>
+    <i-col span="13">
+      <text class="infoContent">{{item.gender}}</text>
+    </i-col>
+  </i-row>
+  <i-row>
+    <i-col span="9" offset="1">
+      <text class="infoTitle">关于她/他：</text>
+    </i-col>
+    <i-col span="13">
+      <text class="infoContent">{{item.self_character}}</text>
+    </i-col>
+  </i-row>
+  <i-row>
+    <i-col span="9" offset="1">
+      <text class="infoTitle">她/他的理想型：</text>
+    </i-col>
+    <i-col span="13">
+      <text class="infoContent">{{item.aim_character}}</text>
+    </i-col>
+  </i-row>
+</view>

@@ -1,0 +1,6 @@
+<!--pages/login/login.wxml-->
+<view class="user_head_line">
+  <open-data type="userAvatarUrl" class="user_head_img"></open-data>
+</view>
+
+<button bindtap="userLogin" id="login_btn">登录</button>

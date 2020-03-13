@@ -1,0 +1,3 @@
+<!--pages/activity/dayCouples/taskDeatil.wxml-->
+<image class="taskImg" src="{{taskInfo.task_img}}" mode="widthFix"></image>
+<text class="taskTitle">记得将完成的任务发送微信小u哦\n祝你任务愉快</text>

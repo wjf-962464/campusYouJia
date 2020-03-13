@@ -1,0 +1,16 @@
+/* pages/activity/dayCouples/taskDeatil.wxss */
+.taskTitle{
+  display: block;
+  height: 60rpx;
+  line-height: 60rpx;
+  color: black;
+  font-size: 32rpx;
+  font-family: KaiTi;
+  font-weight: bold;
+  margin: 30rpx 0;
+  text-align: center;
+}
+.taskImg{
+  width: 100%;
+  border-radius: 9rpx;
+}

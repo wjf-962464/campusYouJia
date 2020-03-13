@@ -1,0 +1,22 @@
+/* pages/activity/dayCouples/main.wxss */
+
+#img_love_participate {
+  margin-top: 40%;
+  margin-left: 35%;
+  width: 30%;
+  height: 200rpx;
+  display: block;
+}
+
+#welcome_Text 
+{
+  white-space:pre-wrap ;
+  color: pink;
+  font-size: 30rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  margin-top: 80rpx;
+  display: block;
+  text-align: center;
+  letter-spacing: 2rpx;
+}

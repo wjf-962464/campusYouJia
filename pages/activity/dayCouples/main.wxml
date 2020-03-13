@@ -1,0 +1,8 @@
+<!--pages/activity/dayCouples/main.wxml-->
+<view wx:if="{{!participateFlag}}">
+  <image animation="{{loveAnimation}}" src="../../../images/activity_dailyCouple/icon_love_participate.png" id="img_love_participate" bindtap="gotoInfoTable"></image>
+  <text id="welcome_Text">{{welcome_text}}</text>
+</view>
+<view wx:else>
+  <text id="welcome_Text">{{activity_notice}}</text>
+</view>

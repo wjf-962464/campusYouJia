@@ -1,0 +1,26 @@
+<!--pages/activity/dayCouples/task.wxml-->
+<!-- 任务列表栏 -->
+<view style="padding:0 50rpx 30rpx 50rpx;">
+  <view wx:for="{{taskList}}" bindtap="gotoTaskDetail" data-bean="{{item}}" class="task_item_view">
+    <text class="task_item_title">{{item.task_title}}</text>
+    <text class="task_item_time">任务时间：{{item.task_time}}</text>
+    <text class="task_item_hint">{{item.task_hint}}</text>
+  </view>
+</view>
+<!-- 底部按钮栏 -->
+<view class="bottom_btn_line">
+  <i-row>
+    <i-col span="12">
+      <view class="btn_left_view" bindtap="gotoSuggestPage">
+        <image src="{{suggestionIcon}}" class="btn_img"></image>
+        <text class="btn_text">建议反馈</text>
+      </view>
+    </i-col>
+    <i-col span="12">
+      <view class="btn_right_view" bindtap="gotoCoupleInfoPage">
+        <image src="{{coupleIcon}}" class="btn_img"></image>
+        <text class="btn_text">{{coupleText}}</text>
+      </view>
+    </i-col>
+  </i-row>
+</view>

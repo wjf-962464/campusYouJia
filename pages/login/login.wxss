@@ -1,0 +1,29 @@
+/* pages/login/login.wxss */
+
+.user_head_line {
+  margin-top: 45%;
+  display: flex;
+  justify-content: center;
+}
+
+.user_head_img {
+  border-radius: 50%;
+  align-items: center;
+  width: 220rpx;
+  height: 220rpx;
+  overflow: hidden;
+}
+
+#login_btn {
+  display: block;
+  background-color: #2ba245;
+  border-radius: 15rpx;
+  margin-top: 50rpx;
+  margin-left: 10%;
+  width: 80%;
+  height: 90rpx;
+  line-height: 90rpx;
+  color: white;
+  font-size: 38rpx;
+  letter-spacing: 10rpx;
+}

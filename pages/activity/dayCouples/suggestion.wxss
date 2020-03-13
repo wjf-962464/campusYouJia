@@ -1,0 +1,41 @@
+/* pages/activity/dayCouples/suggestion.wxss */
+/* 提交按钮 */
+
+.submitBtn {
+  display: block;
+  background-color: gold;
+  border-radius: 15rpx;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  margin-left: 10%;
+  width: 80%;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: white;
+  font-size: 34rpx;
+  letter-spacing: 7rpx;
+}
+/* 输入框 */
+
+.input_line {
+  border-radius: 7rpx;
+  height: 300rpx;
+  line-height: 50rpx;
+  color: #495060;
+  font-size: 28rpx;
+  font-family: KaiTi;
+  margin-top:  40rpx;
+  padding: 30rpx;
+  width: 90%;
+  display: block;
+  background: white;
+}
+
+
+/* 输入占位符 */
+
+.input_hint {
+  color: #80848f;
+  font-size: 28rpx;
+  font-family: KaiTi;
+}

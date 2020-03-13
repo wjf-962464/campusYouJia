@@ -1,0 +1,99 @@
+<!--pages/activity/dayCouples/infoTable.wxml-->
+<image class="table_title_img" src="{{table_title_img}}" mode='scaleToFill'></image>
+<form bindsubmit="submitInfo">
+  <!-- 自动输入模块 -->
+  <view class="table_line">
+    <text class="table_hint">微信号：</text>
+    <input name="phone_num" disabled="true" value="{{phone_num}}" placeholder="点击填写信息" class="input_line" placeholder-class="input_hint" bindtap="chooseAddress"></input>
+  </view>
+  <view class="table_line">
+    <text class="table_hint">现居地址：</text>
+    <input name="address" disabled="true" value="{{address}}" placeholder="点击填写信息" class="input_line" placeholder-class="input_hint" bindtap="chooseAddress"></input>
+  </view>
+  <!-- 单选模块 -->
+  <view class="table_line">
+    <text class="table_hint">性别：</text>
+    <radio-group name="gender">
+      <i-row>
+        <i-col span="12">
+          <label class="radio_item">
+            <radio value="男" />男</label>
+        </i-col>
+        <i-col span="12">
+          <label class="radio_item">
+            <radio value="女" />女</label>
+        </i-col>
+      </i-row>
+    </radio-group>
+  </view>
+    <!-- 单选模块 -->
+  <view class="table_line">
+    <text class="table_hint">是否已有情侣：</text>
+    <radio-group name="couple" bindchange='coupleCheckListen'>
+      <i-row>
+        <i-col span="12">
+          <label class="radio_item2">
+            <radio value="是" />已是情侣狗</label>
+        </i-col>
+        <i-col span="12">
+          <label class="radio_item2">
+            <radio value="否" />还是单身汪</label>
+        </i-col>
+      </i-row>
+    </radio-group>
+  </view>
+  <view wx:if="{{!coupleFlag}}">
+    <view class="table_line">
+      <text class="table_hint">取向：</text>
+      <radio-group name="sexual_preference">
+        <i-row>
+          <i-col span="12">
+            <label class="radio_item">
+              <radio value="同性" />同性</label>
+          </i-col>
+          <i-col span="12">
+            <label class="radio_item">
+              <radio value="异性" />异性</label>
+          </i-col>
+        </i-row>
+      </radio-group>
+    </view>
+    <!-- 标签选择模块 -->
+    <view class="table_line table_line2">
+      <text class="table_hint">关于你：</text>
+      <swiper indicator-dots="true" class="mark_swiper">
+        <swiper-item wx:for="{{characterMarkArr}}">
+          <view class="swiper_item">
+            <text class="mark_hint">{{item.name}}</text>
+            <checkbox-group bindchange="markCheckListener" data-key='{{item.name}}' data-flag='self'>
+              <i-col span="8" wx:for="{{item.value}}">
+                <label class="mark_label">
+                  <checkbox value="{{item}}" />{{item}}</label>
+              </i-col>
+            </checkbox-group>
+          </view>
+        </swiper-item>
+      </swiper>
+      <textarea name="self_character" disabled="true" value="{{self_character_text}}" placeholder="请选择你最想让对方知道的6个标签\r\n（至多6个，慎重考虑哦）" class="input_line input_line2" placeholder-class="input_hint"></textarea>
+    </view>
+    <view class="table_line table_line2">
+      <text class="table_hint">理想中的对方：</text>
+      <swiper indicator-dots="true" class="mark_swiper">
+        <swiper-item wx:for="{{characterMarkArr}}">
+          <text class="mark_hint">{{item.name}}</text>
+          <checkbox-group bindchange="markCheckListener" data-key='{{item.name}}' data-flag='aim'>
+            <i-row>
+              <i-col span="8" wx:for="{{item.value}}">
+                <label class="mark_label">
+                  <checkbox value="{{item}}" />{{item}}</label>
+              </i-col>
+            </i-row>
+          </checkbox-group>
+        </swiper-item>
+      </swiper>
+      <textarea name="aim_character" disabled="true" value="{{aim_character_text}}" placeholder="请选择你理想中的对方的6个标签\r\n（至多6个，慎重考虑哦）" class="input_line input_line2" placeholder-class="input_hint"></textarea>
+    </view>
+  </view>
+  <!-- 提交模块 -->
+  <button formType="submit" class="submitBtn">提交信息</button>
+</form>

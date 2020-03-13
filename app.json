@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/activity/dayCouples/coupleInfo",
+    "pages/activity/dayCouples/suggestion",
+    "pages/activity/dayCouples/main",
+    "pages/activity/dayCouples/task",
+
+    "pages/activity/dayCouples/infoTable",
+    "pages/activity/dayCouples/taskDeatil",
+
+
+    "pages/home/home",
+    "pages/personal/personal",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#B9B9B9",
+    "selectedColor": "#3377FF",
+    "borderStyle": "black",
+    "backgroundColor": "#fcfcfc",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "images/tabBar/tab_item_home_normal.png",
+        "selectedIconPath": "images/tabBar/tab_item_home_select.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "个人",
+        "iconPath": "images/tabBar/tab_item_personal_normal.png",
+        "selectedIconPath": "images/tabBar/tab_item_personal_select.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

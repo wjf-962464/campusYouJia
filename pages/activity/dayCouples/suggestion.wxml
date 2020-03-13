@@ -1,0 +1,10 @@
+<!--pages/activity/dayCouples/suggestion.wxml-->
+<form bindsubmit="submitSuggestion">
+  <i-row>
+    <i-col span="22" offset="1">
+      <textarea placeholder="感谢您的建议或意见，我们将竭诚为您服务" placeholder-class="input_hint" class="input_line" name="suggest" value="{{suggestionValue}}"></textarea>
+    </i-col>
+  </i-row>
+
+  <button formType="submit" class="submitBtn">提交反馈</button>
+</form>
