@@ -4,7 +4,7 @@ const url = require("../../../constants/interfaceUrl.js")
 Page({
   data: {
     coupleFlag: false,
-    table_title_img: "http://39.108.128.147:8080/campusApp/images/acitivity/daily_couple/table_title_img.jpg",
+    table_title_img: "https://39.108.128.147/campusApp/images/acitivity/daily_couple/table_title_img.jpg",
     address: "",
     phone_num: "",
     self_character_arr: [],

@@ -1,4 +1,4 @@
-const BASE_URL = "http://39.108.128.147:8080/campusApp/"
+const BASE_URL = "https://wjfcoding.top/campusApp/"
 
 const defaultMethod = {
   showLoading: function() {

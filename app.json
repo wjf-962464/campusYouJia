@@ -1,9 +1,10 @@
 {
   "pages": [
+    "pages/activity/dayCouples/main",
     "pages/login/login",
     "pages/activity/dayCouples/coupleInfo",
     "pages/activity/dayCouples/suggestion",
-    "pages/activity/dayCouples/main",
+
     "pages/activity/dayCouples/task",
 
     "pages/activity/dayCouples/infoTable",

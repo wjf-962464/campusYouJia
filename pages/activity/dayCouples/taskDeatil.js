@@ -7,6 +7,7 @@ Page({
   },
 
   onLoad: function(options) {
+    wx.hideToast()
     let taskDetailData = JSON.parse(options.data)
     this.setData({
       taskInfo: taskDetailData
@@ -14,7 +15,6 @@ Page({
     wx.setNavigationBarTitle({
       title: taskDetailData.task_title
     })
-    wx.hideToast()
   },
 
   onShow: function() {
